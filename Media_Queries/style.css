@@ -15,6 +15,25 @@ body {
     flex: 1;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    width: 10% ;
+    margin: 10px ;
+}
+
+.btn {
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px ;
+    border-radius: 10px ;
+    border: none  ;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: aliceblue;
+    transform: scale(1.1);
+}
 
 
 /* Mobile View - Responsive */
@@ -58,3 +77,19 @@ body {
 
 
 /* Laptop, Desktop - Responsive */
+
+@media (min-width: 1024px) {
+
+    .container {
+        display: flex ;
+        flex-direction: row-reverse;
+    }
+
+    .card {
+        background-color: chartreuse;
+        color: black;
+        width: 30%;
+    }
+
+}
+
