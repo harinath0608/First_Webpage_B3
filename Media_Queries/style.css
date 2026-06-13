@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px ;
+}
+
+.container {
+    display: flex;
+    gap: 20px ;
+}
+
+.card {
+    background-color: blueviolet ;
+    padding: 15px ;
+    border-radius: 20px ;
+    flex: 1;
+}
+
+
+
+/* Mobile View - Responsive */
+
+
+@media (max-width: 480px ) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        color: aliceblue;
+       width: 100% ; 
+       background-color: brown;
+    }
+
+}
+
+
+/* Tablet View - Responsive */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+
+
+.container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap ;
+}
+
+.card {
+    width: 48% ;
+    background-color: black;
+    color: aqua;
+}
+
+
+}
+
+
+/* Laptop, Desktop - Responsive */
